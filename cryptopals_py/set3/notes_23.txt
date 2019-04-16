@@ -1,0 +1,76 @@
+"""
+ABCD EFGH IJKL MNOP QRST UVWX YZ0_ 2345
+0000 0000 000A BCDE FGHI JKLM NOPQ RSTU
+
+               M
+ABCD EFGH IJKX BXXX XXXX XXXX XXXX XXXX
+"
+SOMETHING << 7
+HIJK XXXX XXXX XXXX XXXX XXXX X000 0000
+1001 1101 0010 1100 0101 0110 1000 0000
+"
+XBCX
+
+
+ABCD EFGH IJKL MNOP QRST UVWX YZ0_ 2345
+
+
+
+
+0000 0000 0000 0000 00AB CDEF GHIJ KLMN
+ASDF AAAA DHAJ DDA0 0000 0000 0000 0000
+
+ABCD EFGH IJKL MNOP QR
+ANSWER
+
+
+ANS = all ^ last15
+last17 is same
+all ^ (8-32) &
+
+ANS = all ^ (8-32)last7zeros & 10011101001011000101011010000000
+
+
+Round 1:
+    take first 18 same
+    then use first 14 and xor with the last 14
+
+Round 2:
+    take last 17 same
+    then find first 15 and xor with 16-30 & 11101111110001100000000000000000
+
+Round 3:
+
+self.f = 1812433253
+self.m = 397
+self.u = 11
+self.s = 7
+self.b = 0x9D2C5680
+self.t = 15
+self.c = 0xEFC60000
+self.l = 18
+
+y = y^((y<<self.s)&self.b)
+
+last 7 same
+(8-32 & b) ^ (1-25)
+10011101001011000101011010000000
+ 23
+
+if(i): check(i+7)
+    if(i+7):
+        if(i+14): => wk i+14
+            => i+7 = i+7th xor i+14
+
+
+u=11
+y^(y>>u)
+
+first 11 same
+12-32 ^ 1-21
+
+1-11 ^ 12-22
+12-21 ^ 23-32
+
+
+"""
