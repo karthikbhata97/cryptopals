@@ -1,0 +1,7 @@
+if offset % 16 == 0 && offset + len % 16 == 0
+No dec
+
+offset + len > LEN 
+end = LEN
+
+begin: offset/16
